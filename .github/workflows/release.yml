@@ -46,7 +46,7 @@ jobs:
 
       - name: Update all projects to release version
         run: |
-          mvn -B -ntp versions:set -DnewVersion=${{ env.version }}
+          mvn -B -ntp versions:set -DupdateBuildOutputTimestampPolicy=always -DnewVersion=${{ env.version }}
 
       - name: Build and deploy Maven packages
         run: |
@@ -66,7 +66,7 @@ jobs:
 
       - name: Update all projects to next snapshot release
         run: |
-          mvn -B -ntp versions:set -DnewVersion=${{ env.version_next }}
+          mvn -B -ntp versions:set -DupdateBuildOutputTimestampPolicy=always -DnewVersion=${{ env.version_next }}
 
       - name: Commit the next snapshot release
         run: |
