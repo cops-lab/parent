@@ -137,6 +137,8 @@
                             <manifest>
                                 <classpathPrefix>lib/</classpathPrefix>
                                 <classpathLayoutType>repository</classpathLayoutType>
+                                <!-- circumvent https://issues.apache.org/jira/browse/MJAR-156 -->
+                                <useUniqueVersions>false</useUniqueVersions>
                             </manifest>
                         </archive>
                     </configuration>
