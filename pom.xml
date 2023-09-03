@@ -3,13 +3,13 @@
 
     <groupId>dev.c0ps</groupId>
     <artifactId>parent</artifactId>
-    <version>0.0.5</version>
+    <version>0.0.6-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- automatically set through `mvn versions:set -DupdateBuildOutputTimestampPolicy=always -DnewVersion=...` -->
-        <project.build.outputTimestamp>2023-09-03T00:16:42Z</project.build.outputTimestamp>
+        <project.build.outputTimestamp>2023-09-03T00:17:40Z</project.build.outputTimestamp>
     </properties>
 
     <build>
