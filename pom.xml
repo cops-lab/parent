@@ -10,6 +10,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- automatically set through `mvn versions:set -DupdateBuildOutputTimestampPolicy=always -DnewVersion=...` -->
         <project.build.outputTimestamp>2023-09-03T00:17:40Z</project.build.outputTimestamp>
+
+        <!-- versions -->
+        <version.junit>5.10.1</version.junit>
+        <version.mockito>5.8.0</version.mockito>
     </properties>
 
     <build>
@@ -250,19 +254,19 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
-            <version>5.10.0</version>
+            <version>${version.junit}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.10.0</version>
+            <version>${version.junit}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
-            <version>5.6.0</version>
+            <version>${version.mockito}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
